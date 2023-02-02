@@ -29,7 +29,7 @@ class NET(nn.Module):
           nn.ConvTranspose2d(128,64,3,stride=2).to(self.device),
           nn.BatchNorm2d(64).to(self.device),
           nn.ReLU(),
-          nn.Conv2d(64,1,3,padding=1).to(self.device),
+          nn.Conv2d(64,3,3,padding=1).to(self.device),
           nn.Tanh()
           )
         
